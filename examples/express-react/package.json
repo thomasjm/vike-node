@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "vike build",
     "dev": "vike dev",
     "prod": "vike build && cross-env NODE_ENV=production node dist/server/index.mjs"
   },
