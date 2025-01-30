@@ -9,10 +9,14 @@ export default {
     vikeNode({
       entry: 'server/index.js',
       standalone: true,
+      standaloneEsbuildOptions: {
+        minify: true,
+        // minifyWhitespace: true,
+      },
     })
   ],
 
-  build: {
-    minify: "esbuild",
-  },
+  // build: {
+  //   minify: "esbuild",
+  // },
 }
